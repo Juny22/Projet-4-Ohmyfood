@@ -1,0 +1,60 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+ /* header **************** */
+.logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    height: 75px;
+    width: 100%;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    background-color: #EAEAEA;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+
+.gps {
+    margin-right: 40px;
+}
+
+.reservation {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #F7F7F7;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.button {
+    border-radius: 60px;
+    margin: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 30px;
+    background: linear-gradient(to top, #9356DC, #FF79DA);
+    color: white;
+    font-size: 17px;
+}
+
+/* main ****************** */
+
+.photo {
+    height: 231px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.menu {
+    display: none;
+}
