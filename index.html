@@ -3,6 +3,7 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ohmyfood</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="scss/main.css">
 </head>
 <body>
     <header>
@@ -19,52 +20,71 @@
         </div>
         <div class="location">
             <i class="fa-solid fa-location-dot gps"></i>
-            Paris, Belleville
+            <strong>Paris, Belleville</strong>
         </div>
         <div class="reservation">
             <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'execption, sélectionnés par nos soins.</p>
-        <nav>
-            <div class="button">Explorer nos restaurants</div>
+            <p class="paragraph">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+        <nav class="button">
+            <button class="button-color">Explorer nos restaurants</button>
         </nav>
         </div>
+        <!--Fonctionnement-->
         <div>
             <h2>Fonctionnement</h2>
             <div>
-                <div>
-                    1
-                    <i class="fa-solid fa-mobile-screen-button"></i>
-                    choisissez un restaurant
+                <ol class="choices">
+                    <li><span class="circle">1</span><i class="fa-solid fa-mobile-screen-button icon"></i>Choisissez un restaurant</li>
+                    <li><span class="circle">2</span><i class="fa-solid fa-list-ul icon"></i>Composez votre menu</li>
+                    <li><span class="circle">3</span><i class="fa-sharp fa-solid fa-store icon-color3"></i>Dégustez au restaurant</li>
+                </ol>
+                <!--test list
+
+                <div class="choices">
+                    <div class="circle1">1</div>
+                    <div class="choice-child">
+                        <i class="fa-solid fa-mobile-screen-button icon"></i>
+                        Choisissez un restaurant
+                    </div>
                 </div>
-                <div>
-                    2
-                    <i class="fa-solid fa-list-ul"></i>
-                    Composez votre menu
+                <div class="choices">
+                    <div class="circle2">2</div>
+                    <div class="choice-child">
+                        <i class="fa-solid fa-list-ul icon"></i>
+                        Composez votre menu
+                    </div>
                 </div>
-                <div>
-                    3
-                    <i class="fa-sharp fa-solid fa-store"></i>
-                    Dégustez au restaurant
+                <div class="choices">
+                    <div class="circle3">3</div>
+                    <div class="choice-child">
+                        <i class="fa-sharp fa-solid fa-store icon-color3"></i>
+                        Dégustez au restaurant
+                    </div>
                 </div>
+                -->
             </div>
         </div>
     </header>
     <main>
-        <div>
-            <h2>Restaurants</h2>
-
-            <article>
+        <!--Conteneur Restaurant avec les plats-->
+        <div class="restaurant">
+            <h2 class="title-rest">Restaurants</h2>
+            <div class="rest-column">
+            <article class="card">
                 <div>
                     <img class="photo" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo d'un plat">
-                    <div>Nouveau</div>
                 </div>
-                <div>
-                    <h3>La palette du goût</h3>
-                    <p>Ménilmontant</p>
+                <div class="new1">Nouveau</div>
+                <div class="plat">
+                    <div>
+                        <h3>La palette du goût</h3>
+                        <p>Ménilmontant</p>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-heart heart"></i>
+                    </div>
                 </div>
-                <div><i class="fa-regular fa-heart"></i></div>
-
-                <!--scss-->
+                <!--scss menu caché-->
                 <div class="menu">
                     <div class="logo">
                         <img src="images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood">
@@ -124,18 +144,23 @@
                 </div>
             </article>
 
-            <article>
+            <article class="card">
                 <div>
                     <img class="photo" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo d'un plat">
-                    <div>Nouveau</div>
                 </div>
-                <div>
-                    <h3>La note enchantée</h3>
-                    <p>Charonne</p>
+                <div class="new2">Nouveau</div>
+                <div class="plat">
+                    <div>
+                        <h3>La note enchantée</h3>
+                        <p>Charonne</p>
+                    </div>
+                    <div>
+                        <!-- icone coeur rempli-->
+                        <i class="fa-regular fa-heart heart"></i>
+                        <!-- <i class="fa-solid fa-heart heart-color"></i> -->
+                    </div>
                 </div>
-                <div><i class="fa-solid fa-heart"></i></div>
-
-                <!--scss-->
+                <!--scss menu caché-->
                 <div class="menu">
                     <div class="logo">
                         <img src="images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood">
@@ -195,15 +220,20 @@
                 </div>
             </article>
 
-            <article>
-                <img class="photo" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo d'un plat">
+            <article class="card">
                 <div>
-                    <h3>À la française</h3>
-                    <p>Cité Rouge</p>
+                    <img class="photo" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo d'un plat">
                 </div>
-                <div><i class="fa-regular fa-heart"></i></div>
-
-                <!--scss-->
+                <div class="plat">
+                    <div>
+                        <h3>À la française</h3>
+                        <p>Cité Rouge</p>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                </div>
+                <!--scss menu caché-->
                 <div class="menu">
                     <div class="logo">
                         <img src="images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood">
@@ -268,15 +298,20 @@
                 </div>
             </article>
 
-            <article>
-                <img class="photo" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo d'un plat">
+            <article class="card">
                 <div>
-                    <h3>Le délice des sens</h3>
-                    <p>Folie-Méricourt</p>
+                <img class="photo" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo d'un plat">
                 </div>
-                <div><i class="fa-regular fa-heart"></i></div>
-                
-                <!--scss-->
+                <div class="plat">
+                    <div>
+                        <h3>Le délice des sens</h3>
+                        <p>Folie-Méricourt</p>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                </div>
+                <!--scss menu caché-->
                 <div class="menu">
                     <div class="logo">
                         <img src="images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood">
@@ -333,18 +368,21 @@
                             </div>
                         <div>Commander</div>  
                     </section>
+                </div>
             </article>
-
+        </div>
         </div>
     </main>
     <footer>
-        <div>
-            <h2>Ohmyfood</h2>
-        </div>
-        <div><i class="fa-solid fa-utensils"></i>Proposer un restaurant</div>
-        <div><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</div>
-        <div>Mentions légales</div>
-        <div>Contact</div>
+        <section>
+            <div>
+                <h2 class="ohmyfood">Ohmyfood</h2>
+            </div>
+            <div class="footer-padd"><i class="fa-solid fa-utensils icon2"></i>Proposer un restaurant</div>
+            <div class="footer-padd"><i class="fa-solid fa-handshake-angle icon3"></i>Devenir partenaire</div>
+            <div class="footer-padd">Mentions légales</div>
+            <div class="footer-padd">Contact</div>
+        </section>
     </footer>
 </body>
 </html>

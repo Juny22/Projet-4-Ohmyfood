@@ -1,0 +1,342 @@
+/* Variants **********/
+
+:root {
+    --primary-color: #9356DC;
+    --secondary-color: #FF79DA;
+    --tertiary-color: #99E2D0;
+
+    --main-bg-color: #F7F7F7;
+    --second-bg-color: #EAEAEA;
+    --shadow-bg-color: #bbbbbb;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+ /* header **************** */
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 30px;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to top, #EAEAEA 90%, #bbbbbb);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 17px;
+}
+
+.gps {
+    margin-right: 20px;
+}
+
+.reservation {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #F7F7F7;
+    font-size: 17px;
+}
+
+.paragraph {
+    font-size: 18px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.button-color {
+    width: 220px;
+    border: 0px solid transparent;
+    border-radius: 25px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    padding: 15px;
+    background: linear-gradient(to top, #9356DC -11%, #FF79DA 120%);
+    box-shadow: 1px 3px 5px #bbbbbb;
+    color: white;
+    font-size: 17px;
+}
+
+.button-color:hover {
+    opacity: 0.9;
+}
+
+.choices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+li {
+    border: 1px solid transparent;
+    border-radius: 15px;
+    background: #F7F7F7;
+    margin-bottom: 20px;
+    padding: 1rem;
+    width: 80%;
+    box-shadow: 1px 3px 5px #bbbbbb;
+    list-style-type: none;
+}
+
+.circle {
+    display: inline-block;
+    position:absolute;
+    left: 28px;
+    border-radius: 50%;
+    background-color: #9356DC;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 7px;
+    padding-right: 7px;
+
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+header h2 {
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+main h2 {
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+/* test list
+
+.circle1 {
+    display: inline-block;
+    position:absolute;
+    left: 25px;
+    bottom: 120px;
+    border-radius: 50%;
+    background-color: #9356DC;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 7px;
+    padding-right: 7px;
+
+}
+
+.circle2 {
+    display: inline-block;
+    position:absolute;
+    left: 25px;
+    bottom: 40px;
+    border-radius: 50%;
+    background-color: #9356DC;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.circle3 {
+    display: inline-block;
+    position:absolute;
+    left: 25px;
+    bottom: -40px;
+    border-radius: 50%;
+    background-color: #9356DC;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+*/
+
+.icon {
+    margin-right: 20px;
+    margin-left: 20px;
+    color: #7E7E7E;
+}
+
+.icon-color3 {
+    margin-right: 20px;
+    margin-left: 20px;
+    color: #9356DC;
+}
+
+/* main ****************** */
+
+.menu {
+    display: none;
+}
+
+h3 {
+    margin:0;
+    margin-top: 15px;
+    padding:0;
+}
+
+p {
+    margin:0;
+    margin-bottom: 15px;
+    padding:0;
+}
+
+.new1 {
+    display: inline-block;
+    position:absolute;
+    bottom: -225px;
+    right: 35px;
+    border: 1px solid transparent;
+    background-color: #99E2D0;
+    border-radius: 2px;
+    color: #008766;
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    box-shadow: 1px 2px 5px #000000;
+    font-weight: bold;
+
+}
+
+.new2 {
+    display: inline-block;
+    position:absolute;
+    bottom: -480px;
+    right: 35px;
+    border: 1px solid transparent;
+    background-color: #99E2D0;
+    border-radius: 2px;
+    color: #008766;
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    box-shadow: 1px 2px 5px #000000;
+    font-weight: bold;
+}
+
+.rest-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    border-radius: 20px;
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.photo {
+    object-fit: cover;
+    width: 100%;
+    height: 160px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.restaurant {
+    background-color: #F7F7F7;
+}
+
+.title-rest {
+    padding-top: 50px;
+}
+
+.plat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+.heart {
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 21px;
+}
+
+.heart:hover {
+    font-weight: bold;
+    transition-delay: 0.1s;
+
+    background: linear-gradient(to top, #9356DC, #FF79DA);
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* test heart like 
+
+.heart-color {
+    opacity: 0;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 21px;
+}
+
+.heart:hover {
+    display: none;
+}
+
+.heart-color:hover {
+    display: inline-block;
+    background: linear-gradient(to top, #9356DC, #FF79DA);
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+
+*/
+
+/* footer ***************** */
+
+.ohmyfood {
+    font-family: 'Shrikhand', sans-serif;
+    color: white;
+    font-size: 18px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #353535;
+    color: white;
+    font-size: 16px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+.icon2 {
+    margin-right: 16px;
+}
+
+.icon3 {
+    margin-right: 10px;
+}
+
+.footer-padd {
+    padding-bottom: 5px;
+}
