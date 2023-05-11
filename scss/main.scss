@@ -26,8 +26,7 @@ body {
 .logo {
     display: flex;
     justify-content: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 1rem;
     height: 30px;
 }
 
@@ -75,7 +74,8 @@ body {
 }
 
 .button-color:hover {
-    opacity: 0.9;
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 .choices {
@@ -86,6 +86,7 @@ body {
 }
 
 li {
+    position: relative;
     border: 1px solid transparent;
     border-radius: 15px;
     background: #F7F7F7;
@@ -99,7 +100,7 @@ li {
 .circle {
     display: inline-block;
     position:absolute;
-    left: 28px;
+    left: -13px;
     border-radius: 50%;
     background-color: #9356DC;
     color: white;
@@ -107,7 +108,6 @@ li {
     padding-bottom: 2px;
     padding-left: 7px;
     padding-right: 7px;
-
 }
 
 h1 {
@@ -119,58 +119,6 @@ header h2 {
     margin-left: 20px;
     font-size: 24px;
 }
-
-main h2 {
-    margin-left: 20px;
-    font-size: 24px;
-}
-
-/* test list
-
-.circle1 {
-    display: inline-block;
-    position:absolute;
-    left: 25px;
-    bottom: 120px;
-    border-radius: 50%;
-    background-color: #9356DC;
-    color: white;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 7px;
-    padding-right: 7px;
-
-}
-
-.circle2 {
-    display: inline-block;
-    position:absolute;
-    left: 25px;
-    bottom: 40px;
-    border-radius: 50%;
-    background-color: #9356DC;
-    color: white;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 7px;
-    padding-right: 7px;
-}
-
-.circle3 {
-    display: inline-block;
-    position:absolute;
-    left: 25px;
-    bottom: -40px;
-    border-radius: 50%;
-    background-color: #9356DC;
-    color: white;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 7px;
-    padding-right: 7px;
-}
-
-*/
 
 .icon {
     margin-right: 20px;
@@ -190,6 +138,11 @@ main h2 {
     display: none;
 }
 
+main h2 {
+    margin-left: 20px;
+    font-size: 24px;
+}
+
 h3 {
     margin:0;
     margin-top: 15px;
@@ -203,10 +156,9 @@ p {
 }
 
 .new1 {
-    display: inline-block;
     position:absolute;
-    bottom: -225px;
-    right: 35px;
+    top: 20px;
+    right: 20px;
     border: 1px solid transparent;
     background-color: #99E2D0;
     border-radius: 2px;
@@ -220,10 +172,9 @@ p {
 }
 
 .new2 {
-    display: inline-block;
     position:absolute;
-    bottom: -480px;
-    right: 35px;
+    top: 20px;
+    right: 20px;
     border: 1px solid transparent;
     background-color: #99E2D0;
     border-radius: 2px;
@@ -241,6 +192,7 @@ p {
 }
 
 .card {
+    position: relative;
     border-radius: 20px;
     background-color: white;
     margin-left: 20px;
@@ -273,6 +225,9 @@ p {
 }
 
 .heart {
+    position: absolute;
+    bottom: 25px;
+    right: 0px;
     margin-top: 20px;
     margin-right: 20px;
     font-size: 21px;
@@ -349,14 +304,23 @@ footer {
 
 /* menu1 *********************************************/
 
+nav {
+    position: relative;
+}
+
 .arrow {
+    position: absolute;
     padding: 0.5rem;
+    bottom: 13px;
+    left: 20px;
+    font-weight: bold;
+    font-size: 24px;
 }
 
 .logo-menu {
     display: flex;
     justify-content: center;
-    padding-bottom: 20px;
+    padding: 1rem;
 }
 
 .heart-menu {
@@ -378,7 +342,7 @@ footer {
 .photo-bg {
     object-fit: cover;
     width: 100%;
-    height: 200px;
+    height: 250px;
     padding: 0;
     margin: 0;
 }
@@ -388,6 +352,8 @@ footer {
 }
 
 .container-menu {
+    position: relative;
+    top: -50px;
     background-color: #EAEAEA;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
@@ -399,17 +365,6 @@ footer {
     font-size: 28px;
 }
 
-.container-plat {
-    border-radius: 15px;
-    background-color: white;
-    padding: 0.1rem;
-    padding-left: 15px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-right: 10px;
-    box-shadow: 1px 3px 5px #bbbbbb;
-}
-
 .menu-border-bottom {
     border-bottom: 3px solid #99E2D0;
     width: 35px;
@@ -419,4 +374,210 @@ footer {
 
 .euro {
     font-weight: bold;
+    position: absolute;
+    right: 5px;
 }
+
+.background {
+    background-color: #EAEAEA;
+}
+
+.button-color-menu {
+    width: 220px;
+    border: 0px solid transparent;
+    border-radius: 25px;
+    margin-top: 20px;
+    padding: 15px;
+    background: linear-gradient(to top, #9356DC -11%, #FF79DA 120%);
+    box-shadow: 1px 3px 5px #bbbbbb;
+    color: white;
+    font-size: 17px;
+}
+
+.button-color-menu:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.container-plat {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border-radius: 15px;
+    background-color: white;
+    padding: 0.1rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    box-shadow: 1px 3px 5px #bbbbbb;
+    animation: menu .5s;
+    animation-timing-function: cubic-bezier(.52,.11,.67,.68);
+    animation-fill-mode: both;
+    transform: scale(0);
+    cursor: pointer;
+
+    &__menu {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        flex: 1;
+    }
+
+    &__title-menu {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__descrip {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__euro {
+        font-weight: bold;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-bottom: 15px;
+    }
+
+    &__valid {
+        background-color: #99E2D0;
+        margin: -1rem -5rem -1rem 1rem;
+        width: 4rem;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        transition-duration: 0.5s;
+      }
+
+    &:hover &__valid {
+        margin-right: -1rem;
+    }
+    
+    &__.appearicon {
+        height: 2rem;
+        width: 2rem;
+        background-color: white;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        border-radius: 100px;
+        transition-duration: 0.5s;
+    }
+
+    &__check {
+        color: white;
+        font-size: 20px;
+    }
+}
+
+/* loader */
+.loader-position {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    height: 100vh;
+    background-color: white;
+    animation: opac 50ms linear;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    transform-origin: bottom;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.loader {
+    margin: auto;
+    border: 20px solid #EAEAEA;
+    border-radius: 50%;
+    border-top: 20px solid #9356DC;
+    width: 100px;
+    height: 100px;
+    animation: spinner 2s linear infinite;
+    animation-delay: 750ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.76,.09,.34,.96);
+  }
+
+  /* animation */
+
+@keyframes menu {
+    0% {
+      transform: scale(0)
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+@keyframes spinner {
+    0% { 
+        transform: rotate(0deg);
+    }
+    80% {
+        opacity: 1;
+    }
+    100% { 
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes opac {
+    80% {
+      opacity: 1;
+    }
+    90% {
+        transform: scale(0);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0);
+    }
+}
+
+/* test
+.radio-toolbar {
+    margin: 10px;
+  }
+  
+  .radio-toolbar input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+  }
+  
+  .radio-toolbar label {
+      display: inline-block;
+      background-color: #ddd;
+      padding: 10px 20px;
+      font-family: sans-serif, Arial;
+      font-size: 16px;
+      border: 2px solid #444;
+      border-radius: 4px;
+  }
+  
+  .radio-toolbar label:hover {
+    background-color: #dfd;
+  }
+  
+  .radio-toolbar input[type="radio"]:focus + label {
+      border: 2px dashed #444;
+  }
+  
+  .radio-toolbar input[type="radio"]:checked + label {
+      background-color: #bfb;
+      border-color: #4c4;
+  } */
