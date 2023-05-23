@@ -1,3 +1,5 @@
+<!doctype html>
+
 <html lang="fr">
 <head>
     <meta charset="utf-8">
@@ -23,7 +25,7 @@
     </header>
 
     <main>
-        <img class="photo-bg" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
+        <img class="photo-bg" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="image d'un plat">
         <section class="container-menu">
             <h2 class="font-family title-center">Le délice des sens
                 <label for="palette-checkbox">
@@ -31,136 +33,136 @@
                     <i class="fa-regular fa-heart heart-menu"></i>
                 </label>
             </h2>
-            
+            <!-- Plat à sélectionner -->
             <div class="container-padding">
                 <div class="menu-border-bottom">ENTRÉES</div>
-                    <label class="container-entre" for="thon">
+                    <div class="container-entre">
                         <div class="container-entre__menu">
                             <h3 class="container-entre__title-menu">Tartare de thon</h3>
                             <p class="container-entre__descrip">Assaisonné au yuzu</p>
                         </div>
-                        <div class="container-entre__euro">25€</div>
+                        <label class="container-entre__euro" for="thon">25€</label>
                         <input type="radio" name="entree" value="thon" id="thon">
                         <div class="container-entre__valid">
                             <div class="container-entre__appearicon">
                                 <i class="container-entre__check fas fa-check-circle"></i>
                             </div>
                         </div>
-                    </label>
+                    </div>
 
-                    <label class="container-entre" for="bouche">
+                    <div class="container-entre">
                         <div class="container-entre__menu">
                             <h3 class="container-entre__title-menu">Bouchée de homard croustillant</h3>
                             <p class="container-entre__descrip">Et sa farandole de petits légumes</p>
                         </div>
-                        <div class="container-entre__euro">35€</div>
+                        <label class="container-entre__euro"  for="bouche">35€</label>
                         <input type="radio" name="entree" value="bouche" id="bouche">
                         <div class="container-entre__valid">
                             <div class="container-entre__appearicon">
                                 <i class="container-entre__check fas fa-check-circle"></i>
                             </div>
                         </div>
-                    </label>
+                    </div>
 
-                    <label class="container-entre" for="cepe">
+                    <div class="container-entre">
                         <div class="container-entre__menu">
                             <h3 class="container-entre__title-menu">Velouté de cèpes</h3>
                             <p class="container-entre__descrip">Aux truffes</p>
                         </div>
-                        <div class="container-entre__euro">20€</div>
+                        <label class="container-entre__euro" for="cepe">20€</label>
                         <input type="radio" name="entree" value="cepe" id="cepe">
                         <div class="container-entre__valid">
                             <div class="container-entre__appearicon">
                                 <i class="container-entre__check fas fa-check-circle"></i>
                             </div>
                         </div>
-                    </label>
+                    </div>
                     
                 <div class="menu-border-bottom">PLATS</div>
-                    <label class="container-plat" for="poulet">
+                    <div class="container-plat">
                         <div class="container-plat__menu">
                             <h3 class="container-plat__title-menu">Poulet rôti aux herbes de Provence</h3>
                             <p class="container-plat__descrip">Et sa crème de truffe</p>
                         </div>
-                        <div class="container-plat__euro">40€</div>
+                        <label class="container-plat__euro" for="poulet">40€</label>
                         <input type="radio" name="plat" value="poulet" id="poulet">
                         <div class="container-plat__valid">
                             <div class="container-plat__appearicon">
                                 <i class="container-plat__check fas fa-check-circle"></i>
                             </div>
                         </div>
-                    </label>
+                    </div>
 
-                    <label class="container-plat" for="rotie">
+                    <div class="container-plat">
                         <div class="container-plat__menu">
                             <h3 class="container-plat__title-menu">Langouste rôtie</h3>
                             <p class="container-plat__descrip">Et ses légumes de saison</p>
                         </div>
-                        <div class="container-plat__euro">35€</div>
+                        <label class="container-plat__euro" for="rotie">35€</label>
                         <input type="radio" name="plat" value="rotie" id="rotie">
                         <div class="container-plat__valid">
                             <div class="container-plat__appearicon">
                                 <i class="container-plat__check fas fa-check-circle"></i>
                             </div>
                         </div>
-                    </label>
+                    </div>
 
-                    <label class="container-plat" for="angus">
+                    <div class="container-plat">
                         <div class="container-plat__menu">
                             <h3 class="container-plat__title-menu">Côte de bœuf Angus</h3>
                             <p class="container-plat__descrip">Et sa purée de panais</p>
                         </div>
-                        <div class="container-plat__euro">44€</div>
+                        <label class="container-plat__euro" for="angus">44€</label>
                         <input type="radio" name="plat" value="angus" id="angus">
                         <div class="container-plat__valid">
                             <div class="container-plat__appearicon">
                                 <i class="container-plat__check fas fa-check-circle"></i>
                             </div>
                         </div>
-                    </label>
+                    </div>
                     
                 <div class="menu-border-bottom">DESSERTS</div>
-                    <label class="container-dessert" for="farandole">
+                    <div class="container-dessert">
                         <div class="container-dessert__menu">
                             <h3 class="container-dessert__title-menu">Farandole de desserts</h3>
                             <p class="container-dessert__descrip">Du chef</p>
                         </div>
-                        <div class="container-dessert__euro">18€</div>
+                        <label class="container-dessert__euro" for="farandole">18€</label>
                         <input type="radio" name="dessert" value="farandole" id="farandole">
                         <div class="container-dessert__valid">
                             <div class="container-dessert__appearicon">
                                 <i class="container-dessert__check fas fa-check-circle"></i>
                             </div>
                         </div>
-                    </label>
+                    </div>
 
-                    <label class="container-dessert" for="creme">
+                    <div class="container-dessert">
                         <div class="container-dessert__menu">
                             <h3 class="container-dessert__title-menu">Crème brulée</h3>
                             <p class="container-dessert__descrip">Revisitée</p>
                         </div>
-                        <div class="container-dessert__euro">22€</div>
+                        <label class="container-dessert__euro" for="creme">22€</label>
                         <input type="radio" name="dessert" value="creme" id="creme">
                         <div class="container-dessert__valid">
                             <div class="container-dessert__appearicon">
                                 <i class="container-dessert__check fas fa-check-circle"></i>
                             </div>
                         </div>
-                    </label>
+                    </div>
 
-                    <label class="container-dessert" for="tiramisu">
+                    <div class="container-dessert">
                         <div class="container-dessert__menu">
                             <h3 class="container-dessert__title-menu">Tiramisu</h3>
                             <p class="container-dessert__descrip">À la noisette</p>
                         </div>
-                        <div class="container-dessert__euro">23€</div>
+                        <label class="container-dessert__euro" for="tiramisu">23€</label>
                         <input type="radio" name="dessert" value="tiramisu" id="tiramisu">
                         <div class="container-dessert__valid">
                             <div class="container-dessert__appearicon">
                                 <i class="container-dessert__check fas fa-check-circle"></i>
                             </div>
                         </div>
-                    </label>
+                    </div>
 
                 <div class="button">
                     <button class="button-color-menu">Commander</button>

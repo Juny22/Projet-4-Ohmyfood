@@ -87,9 +87,8 @@ body {
 
 .choices {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    padding-right: 8%;
 }
 
 li {
@@ -98,8 +97,8 @@ li {
     border-radius: 15px;
     background: #F7F7F7;
     margin-bottom: 20px;
+    margin-right: 30px;
     padding: 1rem;
-    width: 80%;
     box-shadow: 1px 3px 5px #bbbbbb;
     list-style-type: none;
 }
@@ -215,8 +214,11 @@ p {
     border-top-right-radius: 20px;
 }
 
-.restaurant {
+.rest-background {
     background-color: #F7F7F7;
+}
+
+.restaurant {
     padding-bottom: 20px;
     padding-right: 2%;
 }
@@ -420,7 +422,7 @@ nav {
     box-shadow: 1px 3px 5px #000000;
 }
 
-/* Choices **********************************************************************************************************/
+/* radio buttons **********************************************************************************************************/
 
 input {
     display: none;
@@ -437,6 +439,8 @@ input:checked + .container-plat__valid {
 input:checked + .container-dessert__valid {
     margin-right: -1rem;
 }
+
+/* choices **********************************************************************************************************/
 
 .container-entre {
     display: flex;
@@ -485,6 +489,7 @@ input:checked + .container-dessert__valid {
         justify-content: flex-end;
         align-items: flex-end;
         margin-bottom: 15px;
+        cursor: pointer;
     }
 
     &__valid {
@@ -517,8 +522,6 @@ input:checked + .container-dessert__valid {
         font-size: 20px;
     }
 }
-
-/* test radio button *********************************************/
 
 .container-plat {
     display: flex;
@@ -567,6 +570,7 @@ input:checked + .container-dessert__valid {
         justify-content: flex-end;
         align-items: flex-end;
         margin-bottom: 15px;
+        cursor: pointer;
     }
 
     &__valid {
@@ -647,6 +651,7 @@ input:checked + .container-dessert__valid {
         justify-content: flex-end;
         align-items: flex-end;
         margin-bottom: 15px;
+        cursor: pointer;
     }
 
     &__valid {
@@ -759,43 +764,60 @@ input:checked + .container-dessert__valid {
     }
 }
 /* ***** Media queries *******************************************************************************************************************************************/
-/* @media high devices (deskops, more than 1024px ********************************************************************************************************/
+/* @media high devices (desktops, more than 1024px ********************************************************************************************************/
 @media (min-width: 1024px) {
 
     /* home page **********/
 
-    .title-margin {
-        margin-left: 10%;
+    main h2 {
+        margin-left: 15px;
+    }
+
+    .title-rest {
+        margin-left: 40px;
+    }
+
+    .fonction {
+        max-width: 1000px;
+        margin: auto;
     }
 
     .choices {
         width: 100%;
         display: flex;
         flex-direction: row;
+        justify-content:space-between;
+    }
+
+    ol {
+        margin: 0;
+        padding: 0;
     }
 
     li {
-        width: 250px;
-        margin-right: 4%;
+        width: 260px;
+        margin-left: 20px;
+    }
+
+    .restaurant {
+        max-width: 1000px;
+        margin: auto;
     }
 
     .bloc-restaurant {
         display: flex;
         flex-direction: column;
-        margin-left: 7%;
-        margin-right: 7%;
     }
 
     .bloc-card {
         display: flex;
         flex-direction: row;
-        width: 100%;
     }
 
     .card {
-        width: 50%;
-        margin-left: 3%;
-        margin-right: 3%;
+        width: 460px;
+        margin-left: 40px;
+
     }
 
     .footer {
