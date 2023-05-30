@@ -1,0 +1,187 @@
+<!doctype html>
+
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ohmyfood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="scss/main.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <a href="index.html"><i class="fa-solid fa-arrow-left arrow"></i></a>
+            <div class="logo-menu">
+                <img src="images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <img class="photo-bg" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image d'un plat">
+        <section class="container-menu">
+            <h2 class="font-family title-center">La palette du goût
+                <span class="heart-position">
+                    <i class="fa-regular fa-heart heart-menu"></i>
+                    <i class="fa-solid fa-heart heart-menu-full"></i>
+                </span>
+            </h2>
+            <!-- Plat à sélectionner -->
+            <div class="container-padding">
+                <div class="menu-border-bottom">ENTRÉES</div>
+                    <div class="container-entre">
+                        <div class="container-entre__menu">
+                            <h3 class="container-entre__title-menu">Fricassée</h3>
+                            <p class="container-entre__descrip">Au piment d'Espelette</p>
+                        </div>
+                        <label class="container-entre__euro" for="fricasse">25€</label>
+                        <input type="radio" name="entree" value="fricasse" id="fricasse">
+                        <div class="container-entre__valid">
+                            <div class="container-entre__appearicon">
+                                <i class="container-entre__check fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-entre">
+                        <div class="container-entre__menu">
+                            <h3 class="container-entre__title-menu">Foie gras de canard mi-cuit</h3>
+                            <p class="container-entre__descrip">Et ses copeaux de truffe noire</p>
+                        </div>
+                        <label class="container-entre__euro" for="foie">35€</label>
+                        <input type="radio" name="entree" value="foie" id="foie">
+                        <div class="container-entre__valid">
+                            <div class="container-entre__appearicon">
+                                <i class="container-entre__check fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-entre">
+                        <div class="container-entre__menu">
+                            <h3 class="container-entre__title-menu">Œuf au plat</h3>
+                            <p class="container-entre__descrip">Assaisonné à la truffe sur lit de caviar</p>
+                        </div>
+                        <label class="container-entre__euro" for="truffe">20€</label>
+                        <input type="radio" name="entree" value="truffe" id="truffe">
+                        <div class="container-entre__valid">
+                            <div class="container-entre__appearicon">
+                                <i class="container-entre__check fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                <div class="menu-border-bottom">PLATS</div>
+                    <div class="container-plat">
+                        <div class="container-plat__menu">
+                            <h3 class="container-plat__title-menu">Filet de bœuf aux herbes</h3>
+                            <p class="container-plat__descrip">Accompagné de sa ribambelle de légumes</p>
+                        </div>
+                        <label class="container-plat__euro" for="filet">40€</label>
+                        <input type="radio" name="plat" value="filet" id="filet">
+                        <div class="container-plat__valid">
+                            <div class="container-plat__appearicon">
+                                <i class="container-plat__check fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-plat">
+                        <div class="container-plat__menu">
+                            <h3 class="container-plat__title-menu">Parmentier de queue de bœuf</h3>
+                            <p class="container-plat__descrip">À la truffe noire sur sa purée de panais</p>
+                        </div>
+                        <label class="container-plat__euro" for="parmentier">35€</label>
+                        <input type="radio" name="plat" value="parmentier" id="parmentier">
+                        <div class="container-plat__valid">
+                            <div class="container-plat__appearicon">
+                                <i class="container-plat__check fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-plat">
+                        <div class="container-plat__menu">
+                            <h3 class="container-plat__title-menu">Filet de turbot</h3>
+                            <p class="container-plat__descrip">Aux agrumes</p>
+                        </div>
+                        <label class="container-plat__euro" for="turbo">44€</label>
+                        <input type="radio" name="plat" value="turbo" id="turbo">
+                        <div class="container-plat__valid">
+                            <div class="container-plat__appearicon">
+                                <i class="container-plat__check fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                <div class="menu-border-bottom">DESSERTS</div>
+                    <div class="container-dessert">
+                        <div class="container-dessert__menu">
+                            <h3 class="container-dessert__title-menu">Paris-Brest</h3>
+                            <p class="container-dessert__descrip">Revisité</p>
+                        </div>
+                        <label class="container-dessert__euro" for="paris">18€</label>
+                        <input type="radio" name="dessert" value="paris" id="paris">
+                        <div class="container-dessert__valid">
+                            <div class="container-dessert__appearicon">
+                                <i class="container-dessert__check fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-dessert">
+                        <div class="container-dessert__menu">
+                            <h3 class="container-dessert__title-menu">Macaron au chocolat d'exception</h3>
+                            <p class="container-dessert__descrip">Et glace à la vanille de Madagascar</p>
+                        </div>
+                        <label class="container-dessert__euro" for="macaron">22€</label>
+                        <input type="radio" name="dessert" value="macaron" id="macaron">
+                        <div class="container-dessert__valid">
+                            <div class="container-dessert__appearicon">
+                                <i class="container-dessert__check fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-dessert">
+                        <div class="container-dessert__menu">
+                            <h3 class="container-dessert__title-menu">Mousse au chocolat</h3>
+                            <p class="container-dessert__descrip">Au piment d'Espelette et à la truffe noire</p>
+                        </div>
+                        <label class="container-dessert__euro" for="mousse">23€</label>
+                        <input type="radio" name="dessert" value="mousse" id="mousse">
+                        <div class="container-dessert__valid">
+                            <div class="container-dessert__appearicon">
+                                <i class="container-dessert__check fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="button">
+                    <button class="button-color-menu">Commander</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer">
+            <div>
+                <h2 class="ohmyfood">Ohmyfood</h2>
+            </div>
+            <div class="footer__row">
+                <div class="footer-padd"><i class="fa-solid fa-utensils icon2"></i>Proposer un restaurant</div>
+                <div class="footer-padd footer-partenaire"><i class="fa-solid fa-handshake-angle icon3"></i>Devenir partenaire</div>
+                <div class="footer-padd">Mentions légales</div>
+                <a class="footer-padd" href="mailto:ohmyfood@mail.com">Contact</a>
+            </div>
+        </section>
+    </footer>
+</body>
