@@ -71,12 +71,14 @@ body {
     box-shadow: 1px 3px 5px #bbbbbb;
     color: white;
     font-size: 17px;
+    transition: all 500ms;
 }
 
 .button-color:hover {
     opacity: 0.8;
     cursor: pointer;
     box-shadow: 1px 3px 5px #000000;
+    transition: 500ms;
 }
 
 /* main *************************************************************************************************************************/
@@ -101,12 +103,14 @@ li {
     padding: 1rem;
     box-shadow: 1px 3px 5px #bbbbbb;
     list-style-type: none;
+    transition: all 500ms;
 }
 
 li:hover {
     opacity: 0.8;
     cursor: pointer;
     box-shadow: 1px 3px 5px #000000;
+    transition: 500ms;
 }
 
 .circle {
@@ -240,61 +244,28 @@ p {
     font-size: 21px;
 }
 
-.heart:hover {
-    font-weight: bold;
-    transition-delay: 0.1s;
-
-    background: linear-gradient(to top, #9356DC, #FF79DA);
-
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color:transparent;
-    cursor: pointer;
-}
-
-.checkbox {
-    display: none;
-  }
-
-.checkbox:checked + .fa-heart {
-    font-weight: bold;
-    transition-delay: 0.1s;
-
-    background: linear-gradient(to top, #9356DC, #FF79DA);
-
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color:transparent;
-    animation: hearts 150ms linear;
-    cursor: pointer;
-}
-
-/* test heart like 
-
-.heart-color {
-    opacity: 0;
+.heart-full {
+    position: absolute;
+    bottom: 25px;
+    right: 0px;
     margin-top: 20px;
     margin-right: 20px;
     font-size: 21px;
+    opacity: 0;
+    transition: all 1s;
 }
 
-.heart:hover {
-    display: none;
-}
-
-.heart-color:hover {
-    display: inline-block;
+.heart-full:hover {
+    opacity: 1;
+    color: transparent;
+    transform: scale(1.1);
     background: linear-gradient(to top, #9356DC, #FF79DA);
-
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color:transparent;
+    cursor: pointer;
 }
-
-*/
 
 /* footer ***************** */
 
@@ -332,7 +303,7 @@ footer {
     cursor: pointer;
 }
 
-/* menu1 ******************************************************************************************************************************/
+/* menu ******************************************************************************************************************************/
 
 nav {
     position: relative;
@@ -359,8 +330,32 @@ nav {
     justify-content: center;
 }
 
+.heart-position {
+    position: relative;
+}
+
 .heart-menu {
     padding-left: 35px;
+}
+
+.heart-menu-full {
+    opacity: 0;
+    position: absolute;
+    left: 35px;
+    top: 5px;
+    transition: all 1s;
+}
+
+.heart-menu-full:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    color: transparent;
+    background: linear-gradient(to top, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+    cursor: pointer;
 }
 
 .photo-bg {
@@ -379,7 +374,7 @@ nav {
 
 .container-menu {
     position: relative;
-    background-color: #EAEAEA;
+    background-color: #F7F7F7;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
     padding-top: 25px;
@@ -414,30 +409,14 @@ nav {
     box-shadow: 1px 3px 5px #bbbbbb;
     color: white;
     font-size: 17px;
+    transition: all 500ms;
 }
 
 .button-color-menu:hover {
     opacity: 0.8;
     cursor: pointer;
     box-shadow: 1px 3px 5px #000000;
-}
-
-/* radio buttons **********************************************************************************************************/
-
-input {
-    display: none;
-}
-
-input:checked + .container-entre__valid {
-    margin-right: -1rem;
-}
-
-input:checked + .container-plat__valid {
-    margin-right: -1rem;
-}
-
-input:checked + .container-dessert__valid {
-    margin-right: -1rem;
+    transition: 500ms;
 }
 
 /* choices **********************************************************************************************************/
@@ -506,10 +485,9 @@ input:checked + .container-dessert__valid {
         margin-right: -1rem;
     }
 
-    &__.appearicon {
+    &__appearicon {
         height: 2rem;
         width: 2rem;
-        background-color: white;
         display:flex;
         align-items:center;
         justify-content:center;
@@ -587,10 +565,9 @@ input:checked + .container-dessert__valid {
         margin-right: -1rem;
     }
 
-    &__.appearicon {
+    &__appearicon {
         height: 2rem;
         width: 2rem;
-        background-color: white;
         display:flex;
         align-items:center;
         justify-content:center;
@@ -668,10 +645,9 @@ input:checked + .container-dessert__valid {
         margin-right: -1rem;
     }
 
-    &__.appearicon {
+    &__appearicon {
         height: 2rem;
         width: 2rem;
-        background-color: white;
         display:flex;
         align-items:center;
         justify-content:center;
@@ -684,6 +660,23 @@ input:checked + .container-dessert__valid {
         font-size: 20px;
     }
 }
+
+/* radio buttons **********************************************************************************************************/
+input {
+    display: none;
+  }
+  
+  input:checked + .container-entre__valid {
+    margin-right: -1rem;
+  }
+  
+  input:checked + .container-plat__valid {
+    margin-right: -1rem;
+  }
+  
+  input:checked + .container-dessert__valid {
+    margin-right: -1rem;
+  }
 
 /* loader **********************************************************************************************************************/
 .loader-position {
@@ -755,14 +748,6 @@ input:checked + .container-dessert__valid {
     }
 }
 
-@keyframes hearts {
-    0% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
 /* ***** Media queries *******************************************************************************************************************************************/
 /* @media high devices (desktops, more than 1024px ********************************************************************************************************/
 @media (min-width: 1024px) {
